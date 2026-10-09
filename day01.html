@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 01 - 我的第一个 JS 页面</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 60px auto; text-align: center; }
+    button { font-size: 18px; padding: 10px 24px; cursor: pointer; }
+    #count { font-size: 48px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>Day 01：点击计数器</h1>
+  <div id="count">0</div>
+  <button onclick="add()">点我 +1</button>
+
+  <script>
+    // 练手目标：变量、函数、DOM 操作
+    let n = 0;
+    function add() {
+      n = n + 1;
+      document.getElementById("count").textContent = n;
+    }
+  </script>
+</body>
+</html>
